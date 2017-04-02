@@ -82,4 +82,24 @@ nav.movil ul li a {
     a.menu-abrir { display: block; }
     nav.principal ul { display: none; }
     nav.movil ul { display: block; }
+    div.contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+    div.info { width: 100%; }
+    iframe.mapa { width: 500px; }
+}
+
+div.contenedor {
+    display: flex;
+    flex-direction: row;
+}
+
+iframe.mapa {
+    width: 70%;
+    height: 1000px;
+}
+
+div.info {
+    width: 30%;
 }
