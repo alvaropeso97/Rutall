@@ -1,4 +1,8 @@
 /* General */
+body,html {
+    height: 100%;
+    overflow: hidden;
+}
 body {
     font-family: Lato, Arial;
     margin: 0px;
@@ -30,6 +34,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 15px;
+    z-index: 999;
 }
 
 /* Menú principal */
@@ -93,13 +98,32 @@ nav.movil ul li a {
 div.contenedor {
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 
-iframe.mapa {
-    width: 70%;
-    height: 1000px;
+div.mapa {
+    flex-basis: 70%;
+    background-color: indianred;
+
 }
 
-div.info {
-    width: 30%;
+aside.info {
+    flex-basis: 30%;
+}
+
+aside.info nav.secundario {
+    background-color: dodgerblue;
+}
+
+aside.info nav.secundario ul {
+    padding: 25px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+aside.info nav.secundario ul li {
+    display: inline;
+    text-decoration: none;
 }
