@@ -1,7 +1,6 @@
 /* General */
 body,html {
     height: 100%;
-    overflow: hidden;
 }
 body {
     font-family: Lato, Arial;
@@ -23,7 +22,25 @@ a:visited {
     color: inherit;
 }
 
-header {
+div.logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+}
+
+div.logo h1 {
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+}
+
+div.logo small {
+    text-transform: none;
+    font-size: 14px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.barra-menu {
     text-transform: uppercase;
     font-size: 12px;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(196, 196, 196, 0.75);
@@ -33,13 +50,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 15px;
-    z-index: 999;
+    padding: 10px 15px;
 }
 
 /* Menú principal */
-nav.principal ul {
-
+nav.principal {
+    flex-shrink: 0;
 }
 
 nav.principal ul li {
@@ -83,47 +99,108 @@ nav.movil ul li a {
     padding: 7px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 500px) {
-    a.menu-abrir { display: block; }
-    nav.principal ul { display: none; }
-    nav.movil ul { display: block; }
-    div.contenedor {
-        display: flex;
-        flex-direction: column;
-    }
-    div.info { width: 100%; }
-    iframe.mapa { width: 500px; }
-}
-
 div.contenedor {
     display: flex;
     flex-direction: row;
     height: 100%;
 }
 
-div.mapa {
-    flex-basis: 70%;
+section.mapa {
+    flex-basis: 65%;
     background-color: indianred;
 
 }
 
 aside.info {
-    flex-basis: 30%;
+    flex-basis: 35%;
 }
 
 aside.info nav.secundario {
     background-color: dodgerblue;
+    color: #FFFFFF;
+    font-size: 0.7em;
+    text-transform: uppercase;
 }
 
 aside.info nav.secundario ul {
-    padding: 25px 10px;
+    padding: 0.5em;
     display: flex;
+    flex-wrap: wrap;
+    line-height: 4em;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     margin: 0;
 }
 
 aside.info nav.secundario ul li {
     display: inline;
     text-decoration: none;
+    margin-right: 1em;
+}
+
+aside.info nav.secundario ul li a:hover {
+    background-color: #FFFFFF;
+    color:black;
+}
+aside.info nav.secundario ul li a {
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+aside.info section {
+    padding: 15px;
+}
+
+aside.info section header {
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+aside.info section article {
+
+}
+
+div.info-img {
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    -webkit-box-shadow: inset 0px -117px 65px -21px rgba(0,0,0,0.6);
+    -moz-box-shadow: inset 0px -117px 65px -21px rgba(0,0,0,0.6);
+    box-shadow: inset 0px -117px 65px -21px rgba(0,0,0,0.6);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+div.info-img h2 {
+    margin: 0;
+    color: #FFF;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3);
+    padding: 15px;
+}
+
+div.info-img h4 {
+    margin: 0;
+    color: #FFF;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+@media screen and (max-width: 628px) {
+    a.menu-abrir { display: block; }
+    nav.principal ul { display: none; }
+    nav.movil ul { display: block; }
+    div.logo small { display: none; }
+}
+
+@media screen and (max-width: 1000px) {
+    div.contenedor {
+        flex-direction: column;
+    }
 }

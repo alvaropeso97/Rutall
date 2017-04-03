@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <title>Rutall - Inicio</title>
 </head>
 <body>
-    <header>
+<header>
+    <div class="barra-menu">
         <div class="logo">
-            <h1><i class="fa fa-compass" aria-hidden="true"></i>&nbsp;Rutall</h1>
+            <h1><i class="fa fa-compass" aria-hidden="true"></i>&nbsp;Sendapinares</h1>
+            <small>el portal de información sobre rutas y senderos en Covaleda (Soria)</small>
         </div>
         <nav class="principal">
             <ul>
@@ -18,32 +21,42 @@
                 <li><a href="#">Sobre nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
-            <a href="#" class="menu-abrir"><i class="fa fa-bars" aria-hidden="true"></i></a>
         </nav>
-    </header>
-        <nav class="movil">
+        <a href="#" class="menu-abrir"><i class="fa fa-bars" aria-hidden="true"></i></a>
+    </div>
+</header>
+<div class="contenedor">
+    <section class="mapa">
+        mapa
+    </section>
+    <aside class="info">
+        <nav class="secundario">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Senderismo y rutas</a></li>
+                <li><a href="#">Actividades</a></li>
+                <li><a href="#">Alojamientos y restaurantes</a></li>
+                <li><a href="#">Historia y patrimonio</a></li>
+                <li><a href="#">Fiestas</a></li>
+                <li><a href="#">Sitios de interés</a></li>
             </ul>
         </nav>
-        <div class="contenedor">
-            <div class="mapa">
-                mapa
-            </div>
-            <aside class="info">
-                <nav class="secundario">
-                    <ul>
-                        <li>Test</li>
-                        <li>Test</li>
-                        <li>Test</li>
-                        <li>Test</li>
-                    </ul>
-                </nav>
-            </aside>
-        </div>
-    <script src="js/jquery-3.2.0.min.js"></script>
-    <script src="js/main.js"></script>
+        <section>
+            <header>
+                <h1><i class="fa fa-map-signs" aria-hidden="true"></i>&nbsp;Senderismo y rutas</h1>
+            </header>
+            <article>
+                <div class="info-img" style="background-image: url(img/ruta1.JPG)">
+                    <h2>Ruta de los puentes</h2>
+                    <h4>
+                        <span><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;&nbsp;Covaleda</span>
+                        <span>&nbsp;&nbsp;<i class="fa fa-map-o" aria-hidden="true"></i>&nbsp;&nbsp;4.6Km</span>
+                    </h4>
+                </div>
+            </article>
+        </section>
+    </aside>
+</div>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
