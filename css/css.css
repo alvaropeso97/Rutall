@@ -1,6 +1,7 @@
 /* General */
 body,html {
     height: 100%;
+    overflow: hidden;
 }
 body {
     font-family: Lato, Arial;
@@ -72,8 +73,8 @@ nav.principal ul li a {
 
 nav.principal ul li a:hover {
     color: white;
-    background-color: #5a2b80;
-    border-color: #5a2b80;
+    background-color: #db4437;
+    border-color: #db4437;
 }
 
 a.menu-abrir {
@@ -116,7 +117,7 @@ aside.info {
 }
 
 aside.info nav.secundario {
-    background-color: dodgerblue;
+    background-color: rgb(77,106,121);
     color: #FFFFFF;
     font-size: 0.7em;
     text-transform: uppercase;
@@ -203,4 +204,5 @@ div.info-img h4 {
     div.contenedor {
         flex-direction: column;
     }
+    body { overflow: auto; }
 }

@@ -13,7 +13,7 @@ $( window ).resize(function() {
 });
 
 function menuMovil() {
-    if (window.matchMedia('(max-width: 629px)').matches && $('nav.movil').length == 0)
+    if (window.matchMedia('(max-width: 628px)').matches && $('nav.movil').length == 0)
     {
         $("nav.principal").appendTo("body > header").removeClass('principal').addClass('movil');
         $("nav.movil").hide();
